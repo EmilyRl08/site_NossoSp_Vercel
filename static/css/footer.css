@@ -1,0 +1,117 @@
+
+/* RODAPÉ PADRÃO — NOSSO SP */
+
+footer.footer {
+    width: 100%;
+    background: #262722;
+    color: #F3EBDD;
+    padding: 55px 7% 22px;
+    margin-top: 80px;
+    box-sizing: border-box;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.4fr 0.8fr;
+    gap: 45px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.footer-brand .footer-logo {
+    display: inline-block;
+    color: #F3EBDD;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: #C65D3A;
+}
+
+.footer-brand p {
+    max-width: 280px;
+    color: #C7C4B9;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.footer-column h4 {
+    color: #E4B85E;
+    font-size: 15px;
+    margin: 5px 0 8px;
+}
+
+.footer-column a,
+.footer-column span {
+    color: #C7C4B9;
+    font-size: 13px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #E4B85E;
+}
+
+.footer-bottom {
+    max-width: 1250px;
+    margin: 45px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #484941;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-copy,
+.back-top {
+    color: #C7C4B9;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.back-top {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back-top:hover {
+    color: #E4B85E;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+
+@media (max-width: 520px) {
+    footer.footer {
+        padding: 40px 7% 20px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
